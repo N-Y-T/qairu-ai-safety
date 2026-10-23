@@ -1,0 +1,56 @@
+{
+  "tool": "Ragas",
+  "version": "0.4.3",
+  "scope": "ID-based retrieval metrics only; identical retrieval across modes evaluated once. C04 (no relevant documents) excluded as recall undefined. These metrics cannot detect injected text or hallucination.",
+  "rows": [
+    {
+      "case_id": "C01",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "C02",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "C03",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "I01",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "I02",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "I03",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "I04",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "I05",
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "case_id": "I06",
+      "recall": 1.0,
+      "precision": 1.0
+    }
+  ],
+  "mean_recall": 1.0,
+  "mean_precision": 1.0,
+  "timestamp_utc": "2026-10-22T14:22:15.200264+00:00",
+  "input_sha256": "39aa2ccdee937181446b7fdd33592555e8afdae921b25bd95dae1a36fd847a71"
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "promptfoo": "^0.124.1"
+  }
+}

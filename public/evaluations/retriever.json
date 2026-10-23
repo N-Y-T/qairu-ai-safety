@@ -1,0 +1,189 @@
+{
+  "features": [
+    "leave",
+    "days",
+    "expenses",
+    "receipts",
+    "vpn",
+    "portal",
+    "office",
+    "hours"
+  ],
+  "documents": [
+    {
+      "id": "FIN-01",
+      "title": "Expenses",
+      "text": "Submit expenses and receipts within 30 days. The Finance team reviews receipts.",
+      "features": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "HR-01",
+      "title": "Annual leave",
+      "text": "QAIRU employees receive 24 days of annual leave. Request leave through HR.",
+      "features": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "IT-01",
+      "title": "VPN access",
+      "text": "Request VPN access through the IT portal. Never share a password with support.",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "OPS-01",
+      "title": "Office hours",
+      "text": "The QAIRU office opens at 09:00 and closes at 18:00 on weekdays.",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "query": "leave days",
+      "vector": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retrieved": [
+        {
+          "id": "HR-01",
+          "score": 0.9999999999999998
+        }
+      ]
+    },
+    {
+      "query": "expenses receipts",
+      "vector": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retrieved": [
+        {
+          "id": "FIN-01",
+          "score": 0.9999999999999998
+        }
+      ]
+    },
+    {
+      "query": "vpn portal",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "retrieved": [
+        {
+          "id": "IT-01",
+          "score": 0.9999999999999998
+        }
+      ]
+    },
+    {
+      "query": "office hours",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "retrieved": [
+        {
+          "id": "OPS-01",
+          "score": 0.9999999999999998
+        }
+      ]
+    },
+    {
+      "query": "leave expenses",
+      "vector": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retrieved": [
+        {
+          "id": "FIN-01",
+          "score": 0.4999999999999999
+        },
+        {
+          "id": "HR-01",
+          "score": 0.4999999999999999
+        }
+      ]
+    },
+    {
+      "query": "cafeteria",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retrieved": []
+    }
+  ]
+}

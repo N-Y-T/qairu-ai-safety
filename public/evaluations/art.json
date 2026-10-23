@@ -1,0 +1,127 @@
+{
+  "tool": "IBM ART",
+  "version": "1.20.1",
+  "timestamp_utc": "2026-10-22T14:24:06.112041+00:00",
+  "scope": "Continuous feature-space decision-boundary test of the cosine retriever. Fractional features may not correspond to realizable text. No LLM calls or text jailbreak; no fixed perturbation-budget claim.",
+  "algorithm": "HopSkipJump",
+  "config": {
+    "max_iter": 12,
+    "max_eval": 200,
+    "init_eval": 40,
+    "init_size": 50,
+    "clip_values": [
+      0,
+      1
+    ],
+    "numpy_global_seed": 42,
+    "note": "ART internal RNG may not be controlled by the global seed; saved adversarial vectors are the evidence."
+  },
+  "parity_probes": 6,
+  "predict_queries": 5201,
+  "rows": [
+    {
+      "original_id": "FIN-01",
+      "adversarial_id": "IT-01",
+      "changed": true,
+      "l2": 1.2857085466384888,
+      "x": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "x_adv": [
+        0.045101094990968704,
+        0.0,
+        0.3341197371482849,
+        0.4244849979877472,
+        0.6659559607505798,
+        0.6532720923423767,
+        0.03851768746972084,
+        0.06821127235889435
+      ]
+    },
+    {
+      "original_id": "HR-01",
+      "adversarial_id": "OPS-01",
+      "changed": true,
+      "l2": 1.2881978750228882,
+      "x": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "x_adv": [
+        0.3453981578350067,
+        0.3467787206172943,
+        0.017378315329551697,
+        0.050251081585884094,
+        0.048768069595098495,
+        0.05096985399723053,
+        0.6325967907905579,
+        0.6294999718666077
+      ]
+    },
+    {
+      "original_id": "IT-01",
+      "adversarial_id": "OPS-01",
+      "changed": true,
+      "l2": 1.2909876108169556,
+      "x": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_adv": [
+        0.0,
+        0.0,
+        0.007101607043296099,
+        0.04536435380578041,
+        0.32819780707359314,
+        0.4588640332221985,
+        0.7000107765197754,
+        0.6560330986976624
+      ]
+    },
+    {
+      "original_id": "OPS-01",
+      "adversarial_id": "FIN-01",
+      "changed": true,
+      "l2": 1.2902971506118774,
+      "x": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "x_adv": [
+        0.0,
+        0.0037839035503566265,
+        0.7007061243057251,
+        0.6792095899581909,
+        0.0,
+        0.0,
+        0.38180866837501526,
+        0.4252156615257263
+      ]
+    }
+  ]
+}

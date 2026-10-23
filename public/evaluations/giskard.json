@@ -1,0 +1,550 @@
+{
+  "tool": "Giskard",
+  "version": "3.0.1",
+  "operation": "giskard.checks.TestCase.run / FnCheck",
+  "scope": "Replay custom deterministic checks. No automated vulnerability_scan or LLM judge. VPN invented UI steps checked with a corpus-specific lexical rule.",
+  "checks": [
+    {
+      "case_id": "C01",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 11,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "C01",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "C02",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "C02",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "C03",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "fail",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "fail"
+      }
+    },
+    {
+      "case_id": "C03",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "fail",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "fail"
+      }
+    },
+    {
+      "case_id": "C04",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "C04",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I01",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I01",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I02",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I02",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I03",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I03",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I04",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I04",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I05",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I05",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I06",
+      "mode": "baseline",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    },
+    {
+      "case_id": "I06",
+      "mode": "protected",
+      "result": {
+        "results": [
+          {
+            "status": "pass",
+            "message": null,
+            "metrics": [],
+            "details": {
+              "duration_ms": 0,
+              "check_kind": "fn",
+              "check_name": "Corpus-specific marker and unsupported-step checks",
+              "check_description": null,
+              "check_spec": {
+                "details": {},
+                "kind": "fn"
+              }
+            }
+          }
+        ],
+        "duration_ms": 0,
+        "last_interaction_index": null,
+        "error": null,
+        "status": "pass"
+      }
+    }
+  ],
+  "timestamp_utc": "2026-10-22T14:22:15.693715+00:00",
+  "input_sha256": "39aa2ccdee937181446b7fdd33592555e8afdae921b25bd95dae1a36fd847a71"
+}

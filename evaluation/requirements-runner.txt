@@ -1,0 +1,5 @@
+pyrit==1.1.0
+inspect-ai==0.3.283
+ragas==0.4.3
+giskard==3.0.1
+langchain-community==0.3.31
