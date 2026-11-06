@@ -317,13 +317,20 @@ def demo_rag(question):
     corpus, signed = suite["corpus"], rp.manifest(suite["corpus"])
     retrieved = rp.bm25(question, corpus)
     r0 = gen.generate(rp.messages(question, retrieved, rp.BASELINE_SYSTEM, labelled=False))["raw"]
-    kept, _ = rp.validate_sources(retrieved, signed)
+    kept, quarantined = rp.validate_sources(retrieved, signed)
+    top = retrieved[0]["score"] if retrieved else 0
+    r2 = gen.generate(rp.messages(question, kept, rp.PROVENANCE_SYSTEM, labelled=True))["raw"]
+    v2 = vf.verify(r2, kept, nli, NLI_THRESHOLD, min_score=0.5 * top)
+    out = {"retrieved": [d["id"] for d in retrieved], "quarantined": quarantined, "R0_baseline": r0,
+           "R2V_recommended": v2["final"], "R2V_status": v2["status"]}
     if det.scan(question)["score_windowed"] >= THRESHOLD:
-        return {"retrieved": [d["id"] for d in retrieved], "R0_baseline": r0, "R4_protected": "Question blocked: it contains instructions for the assistant."}
-    kept = [d for d in kept if det.scan(d["text"])["score_windowed"] < THRESHOLD]
-    r3 = gen.generate(rp.messages(question, kept, rp.PROVENANCE_SYSTEM, labelled=True))["raw"]
-    v = vf.verify(r3, kept, nli, NLI_THRESHOLD, min_score=0.5 * (retrieved[0]["score"] if retrieved else 0))
-    return {"retrieved": [d["id"] for d in retrieved], "R0_baseline": r0, "R4_protected": v["final"], "verifier_status": v["status"]}
+        out["R4_full"] = "Question blocked: it contains instructions for the assistant."
+        return out
+    kept4 = [d for d in kept if det.scan(d["text"])["score_windowed"] < THRESHOLD]
+    r3 = gen.generate(rp.messages(question, kept4, rp.PROVENANCE_SYSTEM, labelled=True))["raw"]
+    v4 = vf.verify(r3, kept4, nli, NLI_THRESHOLD, min_score=0.5 * top)
+    out.update(R4_full=v4["final"], R4_status=v4["status"], R4_removed_by_detector=[d["id"] for d in kept if d not in kept4])
+    return out
 
 
 # ------------------------------------------------------------------ main

@@ -6,6 +6,13 @@ Interactive prompt-injection and RAG evaluation lab by Nursultan Yessenbek.
 
 The hosted website is private and requires the owner's authorized access. This repository contains its source, synthetic test evidence, reproducible evaluation code and the English midterm presentation.
 
+## Assignment 3 (6 November 2026)
+
+Extended red teaming and evaluation of three new mechanisms — an open prompt-injection detector, RAG source validation and RAG
+output verification — on the same Qwen2.5-0.5B prototype and Colab T4 environment. See **[a3/README.md](a3/README.md)**,
+the report **[a3/report/A3_Report.pdf](a3/report/A3_Report.pdf)** and the
+**[Colab notebook](https://colab.research.google.com/github/N-Y-T/qairu-ai-safety/blob/assignment-3/a3/A3_Experiment.ipynb)**.
+
 ## Presentation and documents
 
 - [English PowerPoint — 8 slides](presentation/Midterm_Slides_EN.pptx)
